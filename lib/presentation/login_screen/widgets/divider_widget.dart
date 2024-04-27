@@ -37,6 +37,5 @@ class DivideWridget extends StatelessWidget {
         ),
       ],
     );
-    ;
   }
 }

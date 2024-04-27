@@ -28,7 +28,7 @@ class LoginScreen extends StatelessWidget {
             SizedBox(
               height: AppBar().preferredSize.height + size.width * 0.15,
             ),
-            LoginTextSection(),
+            const LoginTextSection(),
             SizedBox(
               height: size.width * 0.1,
             ),
