@@ -45,27 +45,27 @@ class CustomTextField extends StatelessWidget {
     return TextField(
       controller: controller,
       decoration: InputDecoration(
-        hintText: "Enter User Name Or Password",
+        hintText: hint,
         hintStyle: TextStyle(color: hintColor),
         border: OutlineInputBorder(
           borderSide: BorderSide(
             color: ColorConstant.lightBlack,
           ),
-          borderRadius: BorderRadius.circular(12),
+          borderRadius: BorderRadius.circular(15),
         ),
         enabledBorder: OutlineInputBorder(
           borderSide: BorderSide(
             width: 0.5,
             color: ColorConstant.lightBlack,
           ),
-          borderRadius: BorderRadius.circular(12),
+          borderRadius: BorderRadius.circular(15),
         ),
         focusedBorder: OutlineInputBorder(
           borderSide: BorderSide(
             width: 0.5,
             color: ColorConstant.lightBlack,
           ),
-          borderRadius: BorderRadius.circular(12),
+          borderRadius: BorderRadius.circular(15),
         ),
         fillColor: filledColor,
         filled: filled,

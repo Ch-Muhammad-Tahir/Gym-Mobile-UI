@@ -10,10 +10,12 @@ class LoginTextSection extends StatelessWidget {
   Widget build(BuildContext context) {
     var size = MediaQuery.sizeOf(context);
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisAlignment: MainAxisAlignment.start,
       children: [
         MyText(
           text: AppStrings.letSignInYou,
-          fontSize: size.width * 0.07,
+          fontSize: size.width * 0.075,
           fontWeight: FontWeight.w500,
         ),
         SizedBox(
@@ -21,18 +23,18 @@ class LoginTextSection extends StatelessWidget {
         ),
         MyText(
           text: AppStrings.welcomBack,
-          fontSize: size.width * 0.06,
+          fontSize: size.width * 0.055,
           fontWeight: FontWeight.w300,
-          color: ColorConstant.lightBlack,
+          color: ColorConstant.grey,
         ),
         SizedBox(
           height: size.width * 0.03,
         ),
         MyText(
             text: AppStrings.youHaveBeenMissed,
-            fontSize: size.width * 0.06,
+            fontSize: size.width * 0.055,
             fontWeight: FontWeight.w300,
-            color: ColorConstant.lightBlack),
+            color: ColorConstant.grey),
       ],
     );
   }
