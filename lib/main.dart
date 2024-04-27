@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gym_ui/presentation/login_screen/login_screen.dart';
+import 'package:gym_ui/utilities/helper_function.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +19,11 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Poppins',
         useMaterial3: true,
       ),
-      home: const LoginScreen(),
+      home: GestureDetector(
+          onTap: () {
+            HelperFunction.hideKeyboard();
+          },
+          child: const LoginScreen()),
     );
   }
 }
