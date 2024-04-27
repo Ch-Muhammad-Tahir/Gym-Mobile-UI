@@ -1,6 +1,8 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:gym_ui/common_widgets/custom_button.dart';
+import 'package:gym_ui/common_widgets/fade_animation.dart';
+import 'package:gym_ui/common_widgets/side_animation.dart';
 import 'package:gym_ui/presentation/login_screen/widgets/google_linkedIn_appleId_login_buttons.dart';
 import 'package:gym_ui/presentation/login_screen/widgets/login_text_field.dart';
 import 'package:gym_ui/presentation/login_screen/widgets/login_text_section.dart';
@@ -26,7 +28,7 @@ class LoginScreen extends StatelessWidget {
             SizedBox(
               height: AppBar().preferredSize.height + size.width * 0.15,
             ),
-            const LoginTextSection(),
+            LoginTextSection(),
             SizedBox(
               height: size.width * 0.1,
             ),
@@ -42,15 +44,18 @@ class LoginScreen extends StatelessWidget {
             SizedBox(
               height: size.width * 0.08,
             ),
-            const GoogleLinkedInAppIdLoginButtons(),
+            const FadeAnimation(child: GoogleLinkedInAppIdLoginButtons()),
             const Spacer(),
             _registerButton(),
             SizedBox(
               height: size.width * 0.03,
             ),
-            CustomButton(
-              text: "Login",
-              onTap: () {},
+            SideAnimation(
+              direction: SlideDirection.up,
+              child: CustomButton(
+                text: "Login",
+                onTap: () {},
+              ),
             ),
             SizedBox(
               height: size.width * 0.1,
@@ -62,24 +67,26 @@ class LoginScreen extends StatelessWidget {
   }
 
   Widget _registerButton() {
-    return Align(
-      alignment: Alignment.center,
-      child: RichText(
-        text: TextSpan(
-            style: TextStyle(
-              color: ColorConstant.grey,
-              fontWeight: FontWeight.w300,
-            ),
-            text: AppStrings.dontHaveAccount,
-            children: [
-              TextSpan(
-                text: AppStrings.register,
-                recognizer: TapGestureRecognizer()..onTap = () {},
-                style: TextStyle(
-                    color: ColorConstant.lightBlack,
-                    fontWeight: FontWeight.w500),
-              )
-            ]),
+    return FadeAnimation(
+      child: Align(
+        alignment: Alignment.center,
+        child: RichText(
+          text: TextSpan(
+              style: TextStyle(
+                color: ColorConstant.grey,
+                fontWeight: FontWeight.w300,
+              ),
+              text: AppStrings.dontHaveAccount,
+              children: [
+                TextSpan(
+                  text: AppStrings.register,
+                  recognizer: TapGestureRecognizer()..onTap = () {},
+                  style: TextStyle(
+                      color: ColorConstant.lightBlack,
+                      fontWeight: FontWeight.w500),
+                )
+              ]),
+        ),
       ),
     );
   }

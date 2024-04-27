@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gym_ui/common_widgets/side_animation.dart';
 import 'package:gym_ui/utilities/app_assets.dart';
 import 'package:gym_ui/utilities/color_constant.dart';
 
@@ -10,9 +11,13 @@ class GoogleLinkedInAppIdLoginButtons extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        _loginImageButton(AppAssets.googleIcon),
+        SideAnimation(
+            direction: SlideDirection.left,
+            child: _loginImageButton(AppAssets.googleIcon)),
         _loginImageButton(AppAssets.appleIcon),
-        _loginImageButton(AppAssets.facboolLogo),
+        SideAnimation(
+            direction: SlideDirection.right,
+            child: _loginImageButton(AppAssets.facboolLogo)),
       ],
     );
   }
