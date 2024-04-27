@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:gym_ui/presentation/login_screen/login_screen.dart';
 import 'package:gym_ui/utilities/helper_function.dart';
 
+import 'presentation/splash_screen/splash_screen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -23,7 +25,7 @@ class MyApp extends StatelessWidget {
           onTap: () {
             HelperFunction.hideKeyboard();
           },
-          child: const LoginScreen()),
+          child: const SplashScreen()),
     );
   }
 }
