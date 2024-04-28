@@ -1,13 +1,10 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:gym_ui/common_widgets/custom_button.dart';
 import 'package:gym_ui/common_widgets/custom_text.dart';
 import 'package:gym_ui/presentation/sign_up_screen/widgets/email_text_field.dart';
 import 'package:gym_ui/presentation/sign_up_screen/widgets/password_text_field.dart';
 import 'package:gym_ui/presentation/sign_up_screen/widgets/user_name_textfield.dart';
 import 'package:gym_ui/utilities/app_string.dart';
-import 'package:gym_ui/utilities/color_constant.dart';
 
 import '../../common_widgets/side_animation.dart';
 

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:gym_ui/presentation/login_screen/login_screen.dart';
 import 'package:gym_ui/utilities/helper_function.dart';
 
 import 'presentation/splash_screen/splash_screen.dart';
