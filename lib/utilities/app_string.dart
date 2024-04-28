@@ -9,4 +9,9 @@ class AppStrings {
   static String dontHaveAccount = "Don't have an account ? ";
   static String register = "Register";
   static String login = "Login";
+  static String createAccount = "Create Account";
+  static String userName = "UserName";
+  static String enterUserName = "Enter UserName";
+  static String enterEmail = "Enter Email";
+  static String email = "Email";
 }

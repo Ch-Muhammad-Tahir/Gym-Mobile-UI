@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gym_ui/presentation/login_screen/login_screen.dart';
+import 'package:gym_ui/presentation/sign_up_screen/sign_up_screen.dart';
 import 'package:gym_ui/utilities/app_assets.dart';
 
 import '../../common_widgets/custom_Tween_anmation.dart';

@@ -7,8 +7,10 @@ import 'package:gym_ui/presentation/login_screen/widgets/google_linkedIn_appleId
 import 'package:gym_ui/presentation/login_screen/widgets/login_text_field.dart';
 import 'package:gym_ui/presentation/login_screen/widgets/login_text_section.dart';
 import 'package:gym_ui/presentation/login_screen/widgets/password_text_field.dart';
+import 'package:gym_ui/presentation/sign_up_screen/sign_up_screen.dart';
 import 'package:gym_ui/utilities/app_string.dart';
 import 'package:gym_ui/utilities/color_constant.dart';
+import 'package:gym_ui/utilities/helper_function.dart';
 import 'widgets/divider_widget.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -46,7 +48,7 @@ class LoginScreen extends StatelessWidget {
             ),
             const FadeAnimation(child: GoogleLinkedInAppIdLoginButtons()),
             const Spacer(),
-            _registerButton(),
+            _registerButton(context),
             SizedBox(
               height: size.width * 0.03,
             ),
@@ -66,7 +68,7 @@ class LoginScreen extends StatelessWidget {
     );
   }
 
-  Widget _registerButton() {
+  Widget _registerButton(BuildContext context) {
     return FadeAnimation(
       child: Align(
         alignment: Alignment.center,
@@ -80,7 +82,11 @@ class LoginScreen extends StatelessWidget {
               children: [
                 TextSpan(
                   text: AppStrings.register,
-                  recognizer: TapGestureRecognizer()..onTap = () {},
+                  recognizer: TapGestureRecognizer()
+                    ..onTap = () {
+                      Navigator.of(context).push(HelperFunction.createRoute(
+                          page: const SignUpScreen()));
+                    },
                   style: TextStyle(
                       color: ColorConstant.lightBlack,
                       fontWeight: FontWeight.w500),
