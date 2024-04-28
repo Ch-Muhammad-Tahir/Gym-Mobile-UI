@@ -1,8 +1,10 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:gym_ui/common_widgets/custom_button.dart';
 import 'package:gym_ui/common_widgets/fade_animation.dart';
 import 'package:gym_ui/common_widgets/side_animation.dart';
+import 'package:gym_ui/presentation/home_screen/home_screen.dart';
 import 'package:gym_ui/presentation/login_screen/widgets/google_linkedIn_appleId_login_buttons.dart';
 import 'package:gym_ui/presentation/login_screen/widgets/login_text_field.dart';
 import 'package:gym_ui/presentation/login_screen/widgets/login_text_section.dart';
@@ -56,7 +58,9 @@ class LoginScreen extends StatelessWidget {
               direction: SlideDirection.up,
               child: CustomButton(
                 text: "Login",
-                onTap: () {},
+                onTap: () {
+                  navigateToHomeScree(context);
+                },
               ),
             ),
             SizedBox(
@@ -95,5 +99,13 @@ class LoginScreen extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  void navigateToHomeScree(BuildContext context) {
+    Navigator.push(
+        context,
+        CupertinoPageRoute(
+          builder: (context) => const HomeScreen(),
+        ));
   }
 }
