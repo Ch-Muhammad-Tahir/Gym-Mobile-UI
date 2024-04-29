@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gym_ui/common_widgets/custom_appbar.dart';
+import 'package:gym_ui/presentation/home_screen/widgets/daily_workout_list_view.dart';
 
 import 'widgets/top_bar_widget.dart';
 
@@ -19,7 +19,11 @@ class HomeScreen extends StatelessWidget {
             SizedBox(
               height: AppBar().preferredSize.height,
             ),
-            const TopBarWidget()
+            const TopBarWidget(),
+            SizedBox(
+              height: size.width * 0.04,
+            ),
+            const DailyWorkOutListView()
           ],
         ),
       ),
