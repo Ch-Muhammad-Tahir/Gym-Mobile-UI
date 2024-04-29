@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gym_ui/common_widgets/custom_text.dart';
 import 'package:gym_ui/utilities/app_string.dart';
-import 'package:gym_ui/utilities/color_constant.dart';
 
 class TopBarWidget extends StatelessWidget {
   const TopBarWidget({super.key});

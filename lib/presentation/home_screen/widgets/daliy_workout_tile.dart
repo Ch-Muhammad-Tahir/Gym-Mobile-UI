@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:gym_ui/presentation/home_screen/model/daily_work_out_object.dart';
-import 'package:gym_ui/utilities/app_assets.dart';
 
 import '../../../common_widgets/custom_text.dart';
 
