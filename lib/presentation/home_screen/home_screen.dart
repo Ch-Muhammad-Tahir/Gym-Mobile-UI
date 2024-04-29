@@ -13,7 +13,7 @@ class HomeScreen extends StatelessWidget {
         automaticallyImplyLeading: false,
         title: "Home Screen",
       ),
-      body: Column(
+      body: const Column(
         children: [],
       ),
     );
