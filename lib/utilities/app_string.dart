@@ -16,4 +16,5 @@ class AppStrings {
   static String email = "Email";
   static String goodMorning = "Good morning, james!";
   static String readyToWorkOut = "Reay to workout?";
+  static String workoutProgram = "Workout program";
 }

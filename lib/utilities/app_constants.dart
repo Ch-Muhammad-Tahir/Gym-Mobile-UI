@@ -30,4 +30,15 @@ class AppConstants {
         data: "70",
         notation: "Rpa"),
   ];
+
+  static List<String> workoutProgramList = [
+    "All Type",
+    "Cardio",
+    "Lower body",
+    "Biceps",
+    "Chest",
+    "Triceps",
+    "Legs",
+    "Shoulders"
+  ];
 }
