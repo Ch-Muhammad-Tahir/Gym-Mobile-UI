@@ -26,7 +26,9 @@ class TodayTargetWidget extends StatelessWidget {
                 height: 30,
               ),
               AnimatedCircularProgressIndicator(
-                  percentage: 0.4, label: "40", duration: Duration(seconds: 3)),
+                  percentage: 0.59,
+                  label: "58",
+                  duration: Duration(seconds: 3)),
             ],
           )
         ],
