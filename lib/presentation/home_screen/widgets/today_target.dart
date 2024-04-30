@@ -14,15 +14,22 @@ class TodayTargetWidget extends StatelessWidget {
     return Container(
       // height: ,
       // width: ,
-      padding: EdgeInsets.all(size.width * 0.04),
+      padding: EdgeInsets.symmetric(horizontal: size.width * 0.04),
       decoration: BoxDecoration(
-        color: Colors.amber.withOpacity(0.2),
-      ),
+          color: Colors.amber.withOpacity(0.2),
+          borderRadius: BorderRadius.circular(30)),
       child: Row(
         children: [
           Expanded(flex: 2, child: _runningTextWidgtes(size)),
-          AnimatedCircularProgressIndicator(
-              percentage: 70, label: "70", duration: Durations.extralong4)
+          const Column(
+            children: [
+              SizedBox(
+                height: 30,
+              ),
+              AnimatedCircularProgressIndicator(
+                  percentage: 0.4, label: "40", duration: Duration(seconds: 3)),
+            ],
+          )
         ],
       ),
     );
