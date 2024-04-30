@@ -12,11 +12,9 @@ class TodayTargetWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     var size = MediaQuery.sizeOf(context);
     return Container(
-      // height: ,
-      // width: ,
-      padding: EdgeInsets.symmetric(horizontal: size.width * 0.04),
+      padding: EdgeInsets.symmetric(horizontal: size.width * 0.045),
       decoration: BoxDecoration(
-          color: Colors.amber.withOpacity(0.2),
+          color: Colors.blue.withOpacity(0.2),
           borderRadius: BorderRadius.circular(30)),
       child: Row(
         children: [

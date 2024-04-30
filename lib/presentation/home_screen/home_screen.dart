@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gym_ui/common_widgets/custom_text.dart';
+import 'package:gym_ui/common_widgets/fade_animation.dart';
+import 'package:gym_ui/common_widgets/side_animation.dart';
 import 'package:gym_ui/presentation/home_screen/widgets/daily_workout_list_view.dart';
 import 'package:gym_ui/utilities/app_string.dart';
 
@@ -32,7 +34,11 @@ class HomeScreen extends StatelessWidget {
             SizedBox(
               height: size.width * 0.04,
             ),
-            const TodayTargetWidget(),
+            const FadeAnimation(
+                curve: Curves.easeIn, child: TodayTargetWidget()),
+            SizedBox(
+              height: size.width * 0.04,
+            ),
             MyText(
               text: AppStrings.workoutProgram,
               fontSize: size.width * 0.045,

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:gym_ui/common_widgets/custom_text.dart';
 import 'package:gym_ui/utilities/app_constants.dart';
 

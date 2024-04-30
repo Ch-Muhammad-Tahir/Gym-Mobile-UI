@@ -19,8 +19,8 @@ class AnimatedCircularProgressIndicator extends StatelessWidget {
     return Column(
       children: [
         SizedBox(
-          height: 80,
-          width: 80,
+          height: 90,
+          width: 90,
           child: TweenAnimationBuilder(
             tween: Tween<double>(begin: 0, end: percentage),
             duration: duration,
@@ -29,8 +29,8 @@ class AnimatedCircularProgressIndicator extends StatelessWidget {
               children: [
                 CircularProgressIndicator(
                   value: value,
-                  color: Colors.blue.withOpacity(0.9),
-                  backgroundColor: Colors.white,
+                  color: Colors.blue.withOpacity(0.7),
+                  backgroundColor: Colors.white.withOpacity(0.7),
                   strokeWidth: 10,
                 ),
                 Center(
@@ -44,11 +44,11 @@ class AnimatedCircularProgressIndicator extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 10 / 3),
-        Text(
-          label,
+        const Text(
+          "",
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
-          style: const TextStyle(color: Colors.white, fontSize: 18),
+          style: TextStyle(color: Colors.white, fontSize: 18),
         ),
       ],
     );
