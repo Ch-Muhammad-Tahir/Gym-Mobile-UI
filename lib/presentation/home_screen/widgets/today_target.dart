@@ -15,7 +15,8 @@ class TodayTargetWidget extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: size.width * 0.045),
       decoration: BoxDecoration(
           color: Colors.blue.withOpacity(0.2),
-          borderRadius: BorderRadius.circular(30)),
+          borderRadius: BorderRadius.circular(30),
+          border: Border.all(color: Colors.blue, width: 0.3)),
       child: Row(
         children: [
           Expanded(flex: 2, child: _runningTextWidgtes(size)),

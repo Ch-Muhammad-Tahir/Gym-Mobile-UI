@@ -18,7 +18,9 @@ class DailyWorkOutTile extends StatelessWidget {
       width: size.width * 0.3,
       decoration: BoxDecoration(
           color: object.color.withOpacity(0.2),
-          borderRadius: BorderRadius.circular(20)),
+          borderRadius: BorderRadius.circular(20),
+          border:
+              Border.all(color: object.color.withOpacity(0.25), width: 0.5)),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
