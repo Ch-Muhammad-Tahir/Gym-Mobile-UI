@@ -3,6 +3,7 @@ import 'package:gym_ui/common_widgets/custom_text.dart';
 import 'package:gym_ui/presentation/home_screen/widgets/daily_workout_list_view.dart';
 import 'package:gym_ui/utilities/app_string.dart';
 
+import 'widgets/today_target.dart';
 import 'widgets/top_bar_widget.dart';
 import 'widgets/workout_program_list_view.dart';
 
@@ -31,6 +32,7 @@ class HomeScreen extends StatelessWidget {
             SizedBox(
               height: size.width * 0.04,
             ),
+            const TodayTargetWidget(),
             MyText(
               text: AppStrings.workoutProgram,
               fontSize: size.width * 0.045,

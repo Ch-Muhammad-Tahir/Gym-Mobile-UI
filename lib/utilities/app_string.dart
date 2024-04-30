@@ -17,4 +17,7 @@ class AppStrings {
   static String goodMorning = "Good morning, james!";
   static String readyToWorkOut = "Reay to workout?";
   static String workoutProgram = "Workout program";
+  static String todayTarget = "Today Target";
+  static String running = "Running";
+  static String runningTime = "24 minutes";
 }
